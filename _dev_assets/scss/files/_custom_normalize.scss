@@ -1,0 +1,101 @@
+﻿html {
+	font-size: 14px;
+	touch-action: manipulation;
+	text-rendering: optimizeLegibility;
+	-ms-overflow-style: scrollbar;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.htmlHidden,
+.htmlHidden body {
+	overflow: hidden !important;
+}
+nav {
+	* {
+		margin: 0;
+		padding: 0;
+		line-height: inherit;
+	}
+
+	ul, ol {
+		list-style: none;
+	}
+}
+
+p {
+    margin-bottom: 0.5rem;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+	+ {
+		h1,	h2,	h3,	h4,	h5,	h6 {
+			margin-top: 1.5rem;
+		}
+	}
+}
+
+template, [hidden], .hide, .hidden {
+	display: none !important;
+}
+
+img, svg {
+    max-width: 100%;
+}
+
+// button,
+// [type="button"],
+// [type="reset"],
+// [type="submit"] {
+// 	cursor: pointer;
+// 	-webkit-appearance: button;
+
+// 	&::-moz-focus-inner  {
+// 		border-style: none;
+// 		padding: 0;
+// 	}
+
+// 	&:-moz-focusring {
+// 		outline: 1px dotted ButtonText;
+// 	}
+// }
+
+// input:-webkit-autofill {
+// 	color: #2a2a2a !important;
+// 	background: none;
+// }
+
+// [type="number"] {
+// 	&::-webkit-inner-spin-button,
+// 	&::-webkit-outer-spin-button {
+// 		height: auto;
+// 	}
+// }
+
+// [type="search"] {
+// 	-webkit-appearance: textfield;
+// 	outline-offset: -2px;
+
+// 	&::-webkit-search-decoration {
+// 		-webkit-appearance: none;
+// 	}
+// }
+
+// ::-webkit-file-upload-button {
+// 	font: inherit;
+// 	-webkit-appearance: button;
+// }
+
+// ::-ms-clear {
+// 	display: none;
+// }
+
+// #navigation {
+// 	display: none;
+// }

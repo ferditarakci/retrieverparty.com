@@ -1,0 +1,22 @@
+.socials {
+	a {
+		min-width: 40px;
+		padding: 0;
+	}
+
+	i {
+		padding-left: 0;
+		font-size: 1.6rem;
+	}
+
+	@media (max-width: 767px) {
+		a {
+			height: 36px;
+		}
+
+		i {
+			font-size: 1.2rem;
+		}
+	}
+
+}

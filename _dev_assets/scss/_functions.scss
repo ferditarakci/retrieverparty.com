@@ -1,0 +1,38 @@
+$html_bg: #d9f57e;
+$black: #2a2d34;
+$gray: #f0eeee;
+$gray2: #8a8a8a;
+$green: #067252;
+$green2: #d9f57e;
+$pink: #d662a8;
+$red: #e86666;
+
+@mixin fontFamily($a: 0) {
+	@if ($a == 1) {
+		font-family: 'Gobold Regular';
+	}
+	@else if ($a == 2) {
+		font-family: 'Gobold Bold Regular';
+	}
+	@else if ($a == 3) {
+		font-family: 'Yellow Rabbit - Personal Use Regular';
+	}
+	@else {
+		font-family: "Open Sans", sans-serif, Arial, Tahoma;
+	}
+}
+
+@mixin fonticon($weight: 400, $size: "", $line: 1, $family: "Pro") {
+	// display: inline-block;
+	line-height: $line;
+	font-family: "Font Awesome 5 #{$family}";
+	@if ($size != "") {
+		font-size: $size;
+	}
+	font-weight: $weight;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}

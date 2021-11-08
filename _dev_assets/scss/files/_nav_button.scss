@@ -1,0 +1,107 @@
+.nav-button {
+	display: none;
+	position: relative;
+	z-index: 2;
+	width: 42px;
+	min-width: 38px;
+	height: 38px;
+	// margin: auto 0 auto auto;
+	cursor: pointer;
+
+	div, span {
+		pointer-events: none;
+	}
+
+	span {
+		background-color: $green;
+		transition-property: top, left, width, height;
+		transition: 0.2s ease-in-out;
+	}
+
+	.hamburger {
+		position: absolute;
+		width: 42px;
+		height: 38px;
+
+		span {
+			position: absolute;
+			right: 4px;
+			width: 32px;
+			height: 4px;
+
+			&:nth-child(1) {
+				top: 8px;
+				transition-delay: 0.25s;
+			}
+
+			&:nth-child(2) {
+				width: 22px;
+				top: 17px;
+				transition-delay: 0.40s;
+			}
+
+			&:nth-child(3) {
+				bottom: 8px;
+				width: 26px;
+				transition-delay: 0.55s;
+			}
+		}
+	}
+
+	.cross {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		transform: rotate(45deg);
+
+		span {
+			position: absolute;
+
+			&:nth-child(1) {
+				top: 0;
+				left: 17px;
+				height: 0;
+				width: 4px;
+				transition-delay: 0s;
+			}
+
+			&:nth-child(2) {
+				top: 17px;
+				left: 0;
+				width: 0;
+				height: 4px;
+				transition-delay: 0.2s;
+			}
+		}
+	}
+
+	&.open {
+		.hamburger span {
+			width: 0;
+
+			&:nth-child(1) {
+				transition-delay: 0s;
+			}
+
+			&:nth-child(2) {
+				transition-delay: 0.1s;
+			}
+
+			&:nth-child(3) {
+				transition-delay: 0.2s;
+			}
+		}
+
+		.cross span {
+			&:nth-child(1) {
+				height: 38px;
+				transition-delay: 0.5s;
+			}
+
+			&:nth-child(2) {
+				width: 38px;
+				transition-delay: 0.3s;
+			}
+		}
+	}
+}

@@ -1,0 +1,231 @@
+body,
+input,
+select,
+textarea,
+button,
+h1, h2, h3, h4, h5, h6 {
+	@include fontFamily(1);
+}
+
+html {
+	font-size: 18px;
+	background: $html_bg;
+}
+
+body {
+	color: $pink;
+	background: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.25;
+	font-weight: 600;
+	letter-spacing: -0.025em;
+
+	a {
+		color: inherit !important;
+		text-decoration: none !important;
+	}
+}
+
+a {
+	color: $pink;
+
+	&:hover {
+		color: $pink;
+		text-decoration: none;
+	}
+}
+
+// @media (max-width: 1399px) {
+// 	.container,
+// 	.container-lg,
+// 	.container-md,
+// 	.container-sm,
+// 	.container-xl,
+// 	.container-xxl {
+// 		max-width: 1320px;
+// 		padding-right: 15px;
+// 		padding-left: 15px;
+// 	}
+// }
+
+@media (max-width: 1199px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl,
+	.container-xxl {
+		min-width: 320px;
+		max-width: 100%;
+	}
+}
+
+html.open-nav {
+	.site-wrapper {
+		overflow: hidden;
+	}
+}
+
+.lazy[data-bg] {
+	background: none no-repeat 50%;
+	background-size: cover;
+}
+
+.section {
+    overflow: hidden;
+
+	.inner {
+		position: relative;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background-color: $html_bg;
+
+		@media (min-width: 992px) {
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+	}
+
+	&-visible {
+		overflow: visible;
+	}
+}
+
+.item-title,
+.section-title {
+	position: relative;
+	margin-bottom: 20px;
+	@include fontFamily(3);
+	line-height: 1;
+	font-size: 4.5rem;
+    font-weight: normal;
+	color: inherit;
+	letter-spacing: 0.04em;
+
+	>a >span,
+	>span {
+		position: relative;
+		display: block;
+	}
+
+	p + & {
+		margin-bottom: 20px;
+	}
+}
+
+
+// @import "images";
+// @import "videos";
+@import "buttons";
+// @import "dropdown";
+
+// .fa-phone:before {
+// 	display: inline-block;
+// 	transform: rotate(110deg);
+// }
+
+// .quicksand {
+// 	@include fontFamily(1);
+// }
+
+.fs-half {
+	font-size: 0.5em !important;
+}
+
+.fs-1x {
+	font-size: 1em !important;
+}
+
+.fs-1x-half {
+	font-size: 1.5em !important;
+}
+
+.fs-2x {
+	font-size: 2em !important;
+}
+
+.fs-2x-half {
+	font-size: 2.5em !important;
+}
+
+.fs-3x {
+	font-size: 3em !important;
+}
+
+.fs-3x-half {
+	font-size: 3.5em !important;
+}
+
+.fs-4x {
+	font-size: 4em !important;
+}
+
+// .fw-300 {
+// 	font-weight: 300 !important;
+// }
+
+// .fw-400 {
+// 	font-weight: 400 !important;
+// }
+
+// .fw-500 {
+// 	font-weight: 500 !important;
+// }
+
+// .fw-600 {
+// 	font-weight: 600 !important;
+// }
+
+// .fw-700 {
+// 	font-weight: 700 !important;
+// }
+
+// .fw-800 {
+// 	font-weight: 800 !important;
+// }
+
+// .fw-900 {
+// 	font-weight: 900 !important;
+// }
+
+// .red {
+// 	color: $red !important;
+// }
+
+// .blue {
+// 	color: $blue !important;
+// }
+
+// .navyblue {
+// 	color: $navyblue !important;
+// }
+
+.green {
+	color: $green !important;
+}
+
+.green2 {
+	color: $green2 !important;
+}
+
+// .yellow {
+// 	color: $yellow !important;
+// }
+
+// .orange {
+// 	color: $orange !important;
+// }
+
+.pink {
+	color: $pink !important;
+}
+
+.white {
+	color: white !important;
+}
+
+.black {
+	color: black !important;
+}

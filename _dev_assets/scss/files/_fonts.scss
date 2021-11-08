@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'Yellow Rabbit - Personal Use Regular';
+	src: local('Yellow Rabbit - Personal Use Regular'),
+		 local('Yellow Rabbit'),
+		 local('Yellow-Rabbit'),
+         url('../fonts/YellowRabbit.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gobold Regular';
+	src: local('Gobold Regular'),
+		 local('Gobold'),
+		 local('Gobold-Regular'),
+         url('../fonts/GoboldRegular.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gobold Bold Regular';
+	src: local('Gobold Bold Regular'),
+		 local('Gobold Bold'),
+		 local('Gobold-Bold-Regular'),
+         url('../fonts/GoboldBold.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
