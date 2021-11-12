@@ -44,15 +44,6 @@
 	&.focus,
 	&:focus {
 		box-shadow: none;
-
-		>span {
-			display: none;
-		}
-
-		>span[data-disabledtext] {
-			display: block;
-			opacity: 0.8;
-		}
 	}
 
 	+.btn {
